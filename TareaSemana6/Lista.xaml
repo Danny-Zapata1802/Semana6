@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana6.Lista">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Consumir web service Get" FontSize="20" HorizontalTextAlignment="Center">
+            </Label>
+            <Label x:Name="texto" Text="">
+            </Label>
+            <Button Text="Consultar"
+                x:Name="btnGet"
+                Clicked="btnGet_Clicked">
+            </Button>
+            <ListView x:Name="MyListView" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblnombre" Text="{Binding nombre}">
+                                </Label>
+                                <Label x:Name="lblapellido" Text="{Binding apellido}">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="btnNuevo" Text="Ingresar Nuevo Registro" Clicked="btnNuevo_Clicked" />
+            <Button x:Name="btnModificar" Text="Modificar Registro" Clicked="btnModificar_Clicked" />
+            <Button x:Name="btnEliminar" Text="Eliminar Registro" Clicked="btnEliminar_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

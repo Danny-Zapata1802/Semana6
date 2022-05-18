@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana6.Modificar"
+             NavigationPage.HasNavigationBar="True">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <Label Text="Ventana de Edición" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="txtCodigo" Placeholder="Ingrese el código" Keyboard="Numeric"/>
+
+        <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked" />
+
+        <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" Keyboard="Text" IsReadOnly="True"/>
+        <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido" Keyboard="Text" IsReadOnly="True"/>
+        <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" Keyboard="Numeric" IsReadOnly="True"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnModificar" Text="Modificar" Clicked="btnModificar_Clicked" Grid.Row="0" Grid.Column="0" />
+            <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" Grid.Row="0" Grid.Column="1" />
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
