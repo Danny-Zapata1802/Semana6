@@ -13,7 +13,7 @@ namespace TareaSemana6
 {
     public partial class Lista : ContentPage
     {
-        private const string Url = "http://192.168.1.3/Moviles/post.php";
+        private const string Url = "http://192.168.0.109/moviles/post.php";
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<TareaSemana6.Datos> _post;
 

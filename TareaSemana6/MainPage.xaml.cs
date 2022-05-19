@@ -28,7 +28,7 @@ namespace TareaSemana6
                 parametros.Add("apellido", txtApellido.Text);
                 parametros.Add("edad", txtEdad.Text);
 
-                cliente.UploadValues("http://192.168.1.3/Moviles/post.php", "POST", parametros);
+                cliente.UploadValues("http://192.168.0.109/moviles/post.php", "POST", parametros);
 
                 DisplayAlert("Alerta", "Registro ingresado correctamente.", "Ok");
             }

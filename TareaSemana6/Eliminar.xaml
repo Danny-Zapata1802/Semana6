@@ -11,11 +11,6 @@
             
             <Entry x:Name="txtCodigo" Placeholder="Ingrese el código" Keyboard="Numeric"/>
 
-            <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked" />
-
-            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" Keyboard="Text" IsReadOnly="True"/>
-            <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido" Keyboard="Text" IsReadOnly="True"/>
-            <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" Keyboard="Numeric" IsReadOnly="True"/>
 
             <Grid>
                 <Grid.RowDefinitions>
